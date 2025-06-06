@@ -1,2 +1,18 @@
-# job-schedule-daily-basis
-Build a backend system that allows to schedule jobs to run at a specific time assume the job is just to write "Hello World" if user can provide details on schedule of a job and when the trigger occurs, the job is to be executed, basically print "Hello World". If it is daily, then we might want to configure the job to run a specific time of the day.
+import java.util.Scanner;
+public class Schedulejobdaily 
+{
+	public static void main(String[] args) 
+		{
+			Scanner scan=new Scanner(System.in);
+			System.out.println("Enter daily scheduled time in hour");
+			int hour=scan.nextInt();
+			if(hour>9 && hour<=10)
+				{
+					System.out.println("Hello World");
+				}
+			else 
+				{
+					System.out.println(" ");
+				}
+		}
+}
